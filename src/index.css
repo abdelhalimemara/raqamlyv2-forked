@@ -1,0 +1,92 @@
+@font-face {
+  font-family: 'Eina03';
+  src: url('/src/assets/fonts/Eina03-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Eina03';
+  src: url('/src/assets/fonts/Eina03-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Eina03';
+  src: url('/src/assets/fonts/Eina03-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #B5FF81;
+  --font-color: #000000;
+  --background-color: #D9E1EC;
+}
+
+body {
+  font-family: 'Eina03', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: var(--font-color);
+  background-color: white;
+}
+
+h1 {
+  font-family: 'Eina03', sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+}
+
+h2 {
+  font-family: 'Eina03', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.bg-green-400 {
+  background-color: var(--primary-color);
+}
+
+.hover\:bg-green-500:hover {
+  background-color: #a3ff5e;
+}
+
+.text-blue-600 {
+  color: #3B82F6;
+}
+
+.focus\:ring-blue-500:focus {
+  --tw-ring-color: #3B82F6;
+}
+
+.focus\:ring-green-500:focus {
+  --tw-ring-color: var(--primary-color);
+}
+
+.bg-var\(--primary-color\) {
+  background-color: var(--primary-color);
+}
+
+.focus\:ring-var\(--primary-color\):focus {
+  --tw-ring-color: var(--primary-color);
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}
